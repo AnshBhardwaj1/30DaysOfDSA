@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and Run C++ with IO",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "g++ \"${file}\" -o \"${fileDirname}\\a.exe\" && \"${fileDirname}\\a.exe\" < \"${workspaceFolder}\\IO\\input.txt\" > \"${workspaceFolder}\\IO\\output.txt\" && del \"${fileDirname}\\a.exe\""
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
